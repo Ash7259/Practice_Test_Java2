@@ -11,7 +11,7 @@ import gui.AddEventsPanel;
 import gui.DisplayEventsPanel;
 import gui.EditPanel;
 import gui.ItemMenu;
-import gui.showLoginPanel;
+import gui.LoginPanel;
 import data.Event;
 import data.Records;
 import gui.DisplayRecordsPanel;
@@ -41,7 +41,7 @@ public class MainFrame extends JFrame {
 
 
 	public void showLoginPanel() { 
-		showLoginPanel p4 = new showLoginPanel(this);
+		LoginPanel p4 = new LoginPanel(this);
 		this.add(p4, "ShowLogin");
 		this.card.show(this.getContentPane(), "ShowLogin");
 	}

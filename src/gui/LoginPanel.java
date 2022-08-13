@@ -16,7 +16,7 @@ import javax.swing.JTextField;
 
 import controller.MainFrame;
 
-public class showLoginPanel extends JPanel{
+public class LoginPanel extends JPanel{
 	private static final long serialVersionUID = -5923657084797906150L;
 
 	protected String g_szLoginFieldLabel = "Login:";
@@ -54,7 +54,7 @@ public class showLoginPanel extends JPanel{
 		return pLabel;
 	}
 	
-	public showLoginPanel(MainFrame main) {
+	public LoginPanel(MainFrame main) {
 		setLayout(null);
 
 		final JLabel pLoginLabel = this.pMakeNewLable(g_szLoginFieldLabel);
@@ -83,7 +83,7 @@ public class showLoginPanel extends JPanel{
 
 				@SuppressWarnings("deprecation")
 				String szPassword = pPasswordTextField.getText();
-				if (szPassword == null || szPassword.length() < 1 || !showLoginPanel.szGetMD5OfString(szPassword).equals(m_pInternalPasswordMd5String)) return;
+				if (szPassword == null || szPassword.length() < 1 || !LoginPanel.szGetMD5OfString(szPassword).equals(m_pInternalPasswordMd5String)) return;
 
 				main.showEventsPanel();
 			}
