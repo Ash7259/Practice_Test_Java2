@@ -43,22 +43,25 @@ public class Controller {
 	}
 
 	public void storeItem(String name) {
-		// TODO Auto-generated method stub
+//		this.ds.storeItem(name);
 		
 	}
 
 	public void deleteItem(int index) {
-		// TODO Auto-generated method stub
-		
+//		this.ds.deleteItem(index);
 	}
 
 	public void editItem(int index, Event newItem) {
-		// TODO Auto-generated method stub
-		
+//		this.ds.editItem(index, newItem);
 	}
 
 	public Event[] getAllItems() {
 		// TODO Auto-generated method stub
-		return null;
+		return this.ds.getAllEvents();
+		// this is null eh
+		// this is causing the error
+		// What are items supposed to be?
+		//Name, date and category entered by an user
+		// mULTI TASKING LA BRO
 	}
 }
